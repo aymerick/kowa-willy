@@ -54,7 +54,7 @@ module.exports = (grunt) ->
         {
           expand: true
           cwd: "bower_components/bootstrap/dist/js/"
-          src: [ "bootstrap.min.js", "bootstrap.min.js" ]
+          src: [ "bootstrap.min.js" ]
           dest: "assets/vendor/js"
         }]
 
