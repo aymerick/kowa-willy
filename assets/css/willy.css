@@ -1,0 +1,339 @@
+/* Screen size */
+/* Layout */
+/* Main colors */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px; }
+
+h1, h2, h3, h4, h5 {
+  color: #62045E; }
+
+a {
+  color: #92278F; }
+  a:hover {
+    color: #781373; }
+
+ul ul {
+  margin-bottom: 10px; }
+
+.btn-purple {
+  color: #fff;
+  background-color: #92278F;
+  border-color: #62045E; }
+
+.btn-purple:hover {
+  color: #fff;
+  background-color: #781373;
+  border-color: #62045E; }
+
+/* navbar: bootstrap overwrites */
+.navbar {
+  margin-bottom: 0px; }
+
+.navbar > .container .navbar-header {
+  position: relative; }
+  .navbar > .container .navbar-header .logo {
+    display: inline-block;
+    height: 44px; }
+  .navbar > .container .navbar-header .navbar-brand {
+    color: #62045E; }
+    .navbar > .container .navbar-header .navbar-brand.with-logo {
+      padding-top: 3px; }
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  color: #444; }
+  @media (min-width: 992px) {
+    .navbar-default .navbar-nav > li > a {
+      font-size: 18px; } }
+
+.jumbotron {
+  margin-bottom: 0px;
+  color: #fff;
+  background-color: #92278F; }
+  @media (max-width: 767px) {
+    .jumbotron h1 {
+      font-size: 30px; } }
+  .jumbotron .description {
+    color: #ddd; }
+    @media (max-width: 767px) {
+      .jumbotron .description {
+        font-size: 16px; } }
+    @media (min-width: 768px) {
+      .jumbotron .description {
+        font-size: 24px; } }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  background-color: #92278F;
+  color: #fff; }
+  footer p {
+    text-align: center;
+    margin-bottom: 0; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #fff; }
+  footer .social {
+    padding: 0 10px; }
+    footer .social:nth-child(n+2) {
+      border-left: #fff solid 1px; }
+
+body.activities section {
+  padding-top: 20px;
+  padding-bottom: 50px; }
+  @media (min-width: 768px) {
+    body.activities section {
+      font-size: 16px; } }
+  body.activities section:nth-child(2n) {
+    background-color: #f5f5f5; }
+  body.activities section img {
+    margin-top: 20px; }
+
+body.members section {
+  padding-top: 30px; }
+body.members .member {
+  text-align: center;
+  margin-bottom: 40px; }
+  body.members .member .role {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold; }
+  body.members .member .description {
+    font-size: 15px;
+    font-style: italic; }
+
+body.contact .content {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+  @media (min-width: 768px) {
+    body.contact .content .contact {
+      font-size: 16px; } }
+  body.contact .content .contact i.fa-building-o {
+    margin-right: 10px; }
+  @media (min-width: 768px) {
+    body.contact .content .social {
+      font-size: 24px; } }
+  body.contact .content .social i.fa {
+    margin-right: 10px; }
+
+body.posts .posts-list {
+  list-style: none;
+  padding-left: 0; }
+body.posts .post {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: #EBF2F6 1px solid; }
+  body.posts .post:last-child {
+    border-bottom: none; }
+  body.posts .post:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px; }
+  body.posts .post .title {
+    margin-top: 0;
+    margin-bottom: 5px; }
+  body.posts .post .date {
+    color: #999;
+    font-style: italic;
+    margin-bottom: 10px; }
+  body.posts .post .cover img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+  @media (min-width: 768px) {
+    body.posts .post .cover {
+      width: 200px; } }
+  body.posts .post .body {
+    padding: 15px 0 0 0; }
+  @media (min-width: 768px) {
+    body.posts .post .cover, body.posts .post .body {
+      display: table-cell;
+      vertical-align: top; }
+    body.posts .post .body {
+      padding: 0 15px; } }
+
+body.post .post-header {
+  color: #999;
+  margin-bottom: 10px; }
+  body.post .post-header .meta {
+    font-style: italic; }
+body.post .post-cover img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+@media (min-width: 768px) {
+  body.post .post-cover {
+    float: left;
+    margin: 0 20px 20px 0; } }
+body.post .post-body {
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    body.post .post-body {
+      margin-top: 0; } }
+
+body.events .events-list {
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px; }
+body.events .event {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+  margin: 20px 0px; }
+  @media (min-width: 768px) {
+    body.events .event {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 120px; } }
+  body.events .event a {
+    display: block;
+    text-decoration: none; }
+  body.events .event time {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background-color: #c52c66;
+    text-align: center;
+    text-transform: uppercase; }
+    body.events .event time span {
+      display: none; }
+    body.events .event time .day {
+      display: block;
+      line-height: 1;
+      font-size: 56pt;
+      font-weight: 100; }
+    body.events .event time .month {
+      display: block;
+      line-height: 1;
+      font-size: 24pt;
+      font-weight: 900; }
+  body.events .event:nth-child(even) time {
+    background-color: #92278F; }
+  body.events .event img {
+    width: 100%; }
+  body.events .event .info {
+    padding: 20px;
+    text-align: center; }
+    body.events .event .info .title {
+      margin: 0px;
+      font-size: 17pt;
+      font-weight: 700; }
+    body.events .event .info .title, body.events .event .info .place, body.events .event .info .dates {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    body.events .event .info .place, body.events .event .info .dates {
+      margin: 0px;
+      font-size: 13pt;
+      font-weight: 300; }
+    body.events .event .info .place {
+      color: #333; }
+    body.events .event .info .dates {
+      margin-top: 10px;
+      font-style: italic;
+      color: rgba(0, 0, 0, 0.5); }
+  @media (min-width: 768px) {
+    body.events .event time, body.events .event img {
+      display: inline-block;
+      float: left;
+      width: 120px;
+      height: 120px; }
+    body.events .event img {
+      padding: 0px;
+      margin: 0px; }
+    body.events .event .info {
+      position: relative;
+      height: 120px;
+      overflow: hidden;
+      background-color: whitesmoke;
+      text-align: left; } }
+
+body.event .event-header .place {
+  font-weight: bold;
+  font-size: 18px; }
+body.event .event-header .dates {
+  font-style: italic; }
+body.event .event-cover img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+@media (min-width: 768px) {
+  body.event .event-cover {
+    float: left;
+    margin: 0 20px 20px 0; } }
+body.event .event-body {
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    body.event .event-body {
+      margin-top: 0; } }
+
+body.page .content {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    body.page .content {
+      font-size: 16px; } }
+
+body.homepage h2 {
+  font-size: 25px; }
+  @media (min-width: 992px) {
+    body.homepage h2 {
+      font-size: 30px; } }
+body.homepage section {
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    body.homepage section {
+      font-size: 18px; } }
+  body.homepage section:nth-child(2n + 1) {
+    background-color: #f5f5f5; }
+body.homepage .presentation {
+  padding-top: 40px; }
+  @media (min-width: 992px) {
+    body.homepage .presentation .photo {
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      margin-top: 15px; } }
+  @media (min-width: 1200px) {
+    body.homepage .presentation .photo {
+      margin-top: -10px; } }
+  body.homepage .presentation .intro {
+    padding: 10px 10px 0px 10px;
+    text-align: justify; }
+    @media (min-width: 768px) {
+      body.homepage .presentation .intro {
+        font-size: 18px; } }
+body.homepage .activities {
+  padding-bottom: 10px;
+  text-align: justify; }
+  body.homepage .activities .activity {
+    margin-bottom: 20px; }
+  body.homepage .activities .more {
+    margin-top: 20px; }

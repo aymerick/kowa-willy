@@ -1,6 +1,3 @@
 bower_components
 node_modules
 .sass-cache
-
-assets/css
-assets/vendor
