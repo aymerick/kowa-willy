@@ -11,6 +11,7 @@ module.exports = (grunt) ->
       dist:
         options:
           bundleExec: true
+          sourcemap: "none" # remove that to generate sourcemap
         files: [{
           expand: true
           cwd: "sass/"
@@ -24,7 +25,8 @@ module.exports = (grunt) ->
         files: [{
           expand: true
           cwd: "bower_components/fontawesome/css/"
-          src: [ "font-awesome.min.css", "font-awesome.css.map" ]
+          src: [ "font-awesome.min.css" ]
+          # src: [ "font-awesome.min.css", "font-awesome.css.map" ]
           dest: "assets/vendor/css/"
         },
         {
@@ -37,14 +39,16 @@ module.exports = (grunt) ->
         files: [{
           expand: true
           cwd: "bower_components/jquery/dist/"
-          src: [ "jquery.min.js", "jquery.min.map" ]
+          src: [ "jquery.min.js" ]
+          # src: [ "jquery.min.js", "jquery.min.map" ]
           dest: "assets/vendor/js"
         }]
       bootstrap:
         files: [{
           expand: true
           cwd: "bower_components/bootstrap/dist/css/"
-          src: [ "bootstrap.min.css", "bootstrap.css.map" ]
+          src: [ "bootstrap.min.css" ]
+          # src: [ "bootstrap.min.css", "bootstrap.css.map" ]
           dest: "assets/vendor/css"
         },
         {
