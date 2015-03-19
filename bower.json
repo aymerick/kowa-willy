@@ -1,11 +1,11 @@
 {
-  "name": "willy",
+  "name": "kowa-willy",
   "version": "0.0.1",
-  "homepage": "https://github.com/aymerick/kowa",
+  "homepage": "https://github.com/aymerick/kowa-willy",
   "authors": [
-    "Aymerick <aymerick@jehanne.org>"
+    "Aymerick JEHANNE"
   ],
-  "description": "willy theme for kowa",
+  "description": "willy theme for kowa, the static website manager",
   "license": "MIT",
   "private": true,
   "ignore": [

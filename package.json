@@ -1,12 +1,8 @@
 {
-  "name": "willy",
+  "name": "kowa-willy",
   "version": "0.0.1",
   "description": "willy theme for kowa",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Aymerick <aymerick@jehanne.org>",
+  "author": "Aymerick JEHANNE",
   "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",
