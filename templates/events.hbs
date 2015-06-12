@@ -3,7 +3,7 @@
 <div class="container events">
     <div class="row">
         <div class="col-xs-12 col-md-offset-2 col-md-8">
-            {{> events-list events}}
+            {{> events-list}}
 
             {{#if pastEvents}}
                 {{#if events}}
@@ -11,7 +11,7 @@
                 {{/if}}
 
                 <h2>{{t "past_events"}}</h2>
-                {{> events-list pastEvents}}
+                {{> events-list events=pastEvents}}
             {{/if}}
         </div>
     </div>
