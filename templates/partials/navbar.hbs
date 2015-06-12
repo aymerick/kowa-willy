@@ -1,0 +1,26 @@
+<header class="navbar navbar-default" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button"  data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">{{t "toggle_navigation"}}</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            {{#if site.logo}}
+                <a href="{{site.basePath}}/" class='navbar-brand with-logo'>{{#if site.logo}}<img src="{{site.logo.small}}" class="logo" alt="{{t "logo"}}" /> {{/if}}{{#if site.nameInNavBar}}{{site.name}}{{/if}}</a>
+            {{else}}
+                <a href="{{site.basePath}}/" class='navbar-brand'>{{site.name}}</a>
+            {{/if}}
+        </div>
+
+        <nav class="collapse navbar-collapse navbar-right" id="navbar-collapse-1" role="navigation">
+            <ul class="nav navbar-nav">
+                {{#each site.navBar}}
+                    <li class="{{#if (startsWith site.url url)}}active{{/if}}"><a href="{{url}}">{{title}}</a></li>
+                {{/each}}
+            </ul>
+        </nav>
+    </div>
+</header>

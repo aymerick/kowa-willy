@@ -1,68 +1,68 @@
-{{ template "partials/jumbotron" .Node }}
+{{> jumbotron}}
 
-{{ if .Description }}
+{{#if description}}
 <section class="presentation">
     <div class="container">
         <div class="row">
-            {{ if .Cover }}
+            {{#if cover}}
                 <div class="col-md-4 photo">
-                    <img src="{{ .Cover.Small }}" class="img-responsive img-thumbnail center-block" alt="{{ t "cover" }}" />
+                    <img src="{{cover.small}}" class="img-responsive img-thumbnail center-block" alt="{{t "cover"}}" />
                 </div>
                 <div class="col-md-8 intro">
-                    {{ .Description }}
+                    {{description}}
                 </div>
-            {{ else }}
+            {{else}}
                 <div class="col-md-12 intro">
-                    {{ .Description }}
+                    {{description}}
                 </div>
-            {{ end }}
+            {{/if}}
         </div>
     </div>
 </section>
-{{ end }}
+{{/if}}
 
-{{ if .Activities }}
+{{#if activities}}
 <section class="activities">
     <div class="container">
         <div class="row">
-            {{ range $index, $activity := .Activities }}
-                {{ if modBool $index 2 }}
+            {{#each activities}}
+                {{#if (modBool @index 2)}}
                     <div class="clearfix visible-sm-block"></div>
-                {{ end }}
+                {{/if}}
 
                 <div class="col-md-4 col-sm-6 activity">
-                    <h3>{{ $activity.Title }}</h3>
-                    {{ $activity.Summary }}
+                    <h3>{{title}}</h3>
+                    {{summary}}
                     <p class='more'>
-                        <a href="{{ urlFor "activities" }}" class="btn btn-purple">{{ t "more_infos" }}</a>
+                        <a href="{{urlFor "activities"}}" class="btn btn-purple">{{t "more_infos"}}</a>
                     </p>
                 </div>
-            {{ end }}
+            {{/each}}
         </div>
     </div>
 </section>
-{{ end }}
+{{/if}}
 
-{{ if .MoreDesc }}
+{{#if moreDesc}}
 <section class="more-description">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                {{ .MoreDesc }}
+                {{moreDesc}}
             </div>
         </div>
     </div>
 </section>
-{{ end }}
+{{/if}}
 
-{{ if .JoinText }}
+{{#if joinText}}
 <section class="join-us">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                {{ .JoinText }}
+                {{joinText}}
             </div>
         </div>
     </div>
 </section>
-{{ end }}
+{{/if}}

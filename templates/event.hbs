@@ -1,30 +1,30 @@
-{{ template "partials/jumbotron" .Node }}
+{{> jumbotron}}
 
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <article>
                 <header class="event-header">
-                    <h1>{{ .Title }}</h1>
+                    <h1>{{title}}</h1>
                     <p>
-                        <span class="place">{{ .Place }}</span> - <span class="dates">{{ .Dates }}</span>
+                        <span class="place">{{place}}</span> - <span class="dates">{{dates}}</span>
                     </p>
                 </header>
 
-                {{ if .Cover }}
+                {{#if cover}}
                     <section class="event-cover">
-                        <img src="{{ .Cover.Small }}" class="cover img-thumbnail" alt="{{ t "cover" }}" />
+                        <img src="{{cover.small}}" class="cover img-thumbnail" alt="{{t "cover"}}" />
                     </section>
-                {{ end }}
+                {{/if}}
 
                 <section class="event-body">
-                    {{ .Body }}
+                    {{body}}
                 </section>
 
                 <section class="event-footer">
                     <ul class="nav nav-pills pull-left">
                         <li>
-                            <a href="{{ urlFor "events" }}"><i class="fa fa-arrow-left"></i> {{ t "back_to_events" }}</a>
+                            <a href="{{urlFor "events"}}"><i class="fa fa-arrow-left"></i> {{t "back_to_events"}}</a>
                         </li>
                     </ul>
                 </section>

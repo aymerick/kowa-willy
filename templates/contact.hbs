@@ -1,0 +1,36 @@
+{{> jumbotron}}
+
+<div class="container content">
+    <div class="row">
+        {{#if haveContact}}
+            <div class="col-md-6 contact">
+                {{#if address}}
+                    <h3><i class="fa fa-building-o"></i> {{t "address"}}</h3>
+                    <address>
+                        {{address}}
+                    </address>
+                {{/if}}
+
+                {{#if email}}
+                    <h3><i class="fa fa-envelope-o"></i> {{t "email"}}</h3>
+                    <a class="email" href="mailto:{{email}}">{{email}}</a>
+                {{/if}}
+            </div>
+        {{/if}}
+
+        {{#if haveSocial}}
+            <div class="col-md-6 social">
+                <h3>{{t "follow_us"}}</h3>
+                {{#if facebook}}
+                    <p><i class="fa fa-facebook-square"></i> <a href="{{facebook}}" target="_blank">Facebook</a></p>
+                {{/if}}
+                {{#if twitter}}
+                    <p><i class="fa fa-twitter-square"></i> <a href="{{twitter}}" target="_blank">Twitter</a></p>
+                {{/if}}
+                {{#if googlePlus}}
+                    <p><i class="fa fa-google-plus-square"></i> <a href="{{googlePlus}}" target="_blank">Google+</a></p>
+                {{/if}}
+            </div>
+        {{/if}}
+    </div>
+</div>

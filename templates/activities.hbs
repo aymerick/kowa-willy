@@ -1,0 +1,25 @@
+{{> jumbotron}}
+
+{{#each activities}}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>{{title}}</h2>
+                {{#if body}}
+                    {{body}}
+                {{else}}
+                    {{summary}}
+                {{/if}}
+            </div>
+        </div>
+        {{#if cover}}
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{cover.small}}" class="img-responsive img-thumbnail center-block" alt="{{t "cover"}}" />
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</section>
+{{/each}}

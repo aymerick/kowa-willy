@@ -1,0 +1,28 @@
+{{> jumbotron}}
+
+<div class="container posts">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="posts-list">
+
+                {{#each posts}}
+                    <li class="post">
+                        <h2 class="title"><a href="{{url}}">{{title}}</a></h2>
+                        <div class="date">{{date}}</div>
+                        {{#if cover}}
+                            <div class="cover">
+                                <a href="{{url}}">
+                                    <img src="{{cover.small}}" class="img-thumbnail" alt="{{t "cover"}}" />
+                                </a>
+                            </div>
+                        {{/if}}
+                        <div class="body">
+                            {{body}}
+                        </div>
+                    </li>
+                {{/each}}
+
+            </ul>
+        </div>
+    </div>
+</div>

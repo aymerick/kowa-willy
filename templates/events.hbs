@@ -1,0 +1,18 @@
+{{> jumbotron}}
+
+<div class="container events">
+    <div class="row">
+        <div class="col-xs-12 col-md-offset-2 col-md-8">
+            {{> events-list events}}
+
+            {{#if pastEvents}}
+                {{#if events}}
+                    <hr />
+                {{/if}}
+
+                <h2>{{t "past_events"}}</h2>
+                {{> events-list pastEvents}}
+            {{/if}}
+        </div>
+    </div>
+</div>

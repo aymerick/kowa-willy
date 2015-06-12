@@ -1,0 +1,26 @@
+{{> jumbotron}}
+
+<section>
+    <div class="container">
+        <div class="row">
+            {{#each members}}
+                {{#if (modBool @index 2)}}
+                    <div class="clearfix visible-sm-block"></div>
+                {{/if}}
+
+                <div class="col-md-4 col-sm-6 member">
+                    <h3>{{fullname}}</h3>
+                    {{#if photo}}
+                        <img src="{{photo.portraitFill}}" class="img-responsive img-thumbnail avatar" alt="{{fullname}}" />
+                    {{else}}
+                        <img src="{{site.basePath}}/assets/img/avatar.jpg" class="img-responsive img-thumbnail avatar no-photo" alt="{{fullname}}" />
+                    {{/if}}
+                    <p class="role">{{role}}</p>
+                    <div class="description">
+                        {{description}}
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

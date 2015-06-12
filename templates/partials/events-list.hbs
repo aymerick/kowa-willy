@@ -1,0 +1,22 @@
+<ul class="events-list">
+    {{#each this}}
+        <li class="event">
+            <a href="{{url}}">
+                <time datetime="{{startDateRFC3339}}">
+                    <span class="day">{{startDay}}</span>
+                    <span class="month">{{startMonthShort}}</span>
+                    <span class="year">{{startYear}}</span>
+                    <span class="time">{{startTime}}</span>
+                </time>
+                {{#if cover}}
+                    <img src="{{cover.square}}" alt="{{t "cover"}}" />
+                {{/if}}
+                <div class="info">
+                    <h2 class="title">{{title}}</h2>
+                    <p class="place">{{place}}</p>
+                    <p class="dates">{{dates}}</p>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+</ul>

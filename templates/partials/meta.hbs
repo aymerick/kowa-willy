@@ -1,0 +1,25 @@
+    <link rel="canonical" href="{{absoluteUrl}}" />
+
+{{#if meta.OGType}}
+    <meta property="og:type" content="{{meta.OGType}}" />
+{{/if}}
+
+    <meta property="og:site_name" content="{{site.name}}" />
+    <meta property="og:title" content="{{meta.title}}" />
+    <meta property="og:description" content="{{meta.description}}" />
+    <meta property="og:url" content="{{absoluteUrl}}" />
+
+{{#if cover}}
+    <meta property="og:image" content="{{cover.smallAbsolute}}" />
+{{/if}}
+
+{{#if meta.twitterCard}}
+    <meta name="twitter:card" content="{{meta.twitterCard}}" />
+    <meta name="twitter:title" content="{{meta.title}}" />
+    <meta name="twitter:description" content="{{meta.description}}" />
+    <meta name="twitter:url" content="{{absoluteUrl}}" />
+
+    {{#if cover}}
+        <meta name="twitter:image:src" content="{{cover.smallAbsolute}}" />
+    {{/if}}
+{{/if}}
