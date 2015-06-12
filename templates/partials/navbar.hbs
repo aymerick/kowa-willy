@@ -8,17 +8,17 @@
                 <span class="icon-bar"></span>
             </button>
 
-            {{#if site.logo}}
-                <a href="{{site.basePath}}/" class='navbar-brand with-logo'>{{#if site.logo}}<img src="{{site.logo.small}}" class="logo" alt="{{t "logo"}}" /> {{/if}}{{#if site.nameInNavBar}}{{site.name}}{{/if}}</a>
+            {{#if @site.logo}}
+                <a href="{{@site.basePath}}/" class='navbar-brand with-logo'>{{#if @site.logo}}<img src="{{@site.logo.small}}" class="logo" alt="{{t "logo"}}" /> {{/if}}{{#if @site.nameInNavBar}}{{@site.name}}{{/if}}</a>
             {{else}}
-                <a href="{{site.basePath}}/" class='navbar-brand'>{{site.name}}</a>
+                <a href="{{@site.basePath}}/" class='navbar-brand'>{{@site.name}}</a>
             {{/if}}
         </div>
 
         <nav class="collapse navbar-collapse navbar-right" id="navbar-collapse-1" role="navigation">
             <ul class="nav navbar-nav">
-                {{#each site.navBar}}
-                    <li class="{{#if (startsWith site.url url)}}active{{/if}}"><a href="{{url}}">{{title}}</a></li>
+                {{#each @site.navBar}}
+                    <li class="{{#if (startsWith @site.url url)}}active{{/if}}"><a href="{{url}}">{{title}}</a></li>
                 {{/each}}
             </ul>
         </nav>

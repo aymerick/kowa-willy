@@ -10,14 +10,14 @@
 
     {{> meta}}
 
-    {{#if site.favicon}}
-        <link rel="icon" type="image/png" href="{{site.basePath}}/favicon.png" />
+    {{#if @site.favicon}}
+        <link rel="icon" type="image/png" href="{{@site.basePath}}/favicon.png" />
     {{/if}}
 
-    <link href="{{site.basePath}}/assets/vendor/css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{site.basePath}}/assets/vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{@site.basePath}}/assets/vendor/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{@site.basePath}}/assets/vendor/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="{{site.basePath}}/assets/css/willy.css" rel="stylesheet">
+    <link href="{{@site.basePath}}/assets/css/willy.css" rel="stylesheet">
 </head>
 
 <body class="{{bodyClass}}">
@@ -27,8 +27,8 @@
 
     {{> footer}}
 
-    <script src="{{site.basePath}}/assets/vendor/js/jquery.min.js"></script>
-    <script src="{{site.basePath}}/assets/vendor/js/bootstrap.min.js"></script>
+    <script src="{{@site.basePath}}/assets/vendor/js/jquery.min.js"></script>
+    <script src="{{@site.basePath}}/assets/vendor/js/bootstrap.min.js"></script>
 
     {{> analytics}}
 </body>
