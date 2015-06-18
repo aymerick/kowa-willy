@@ -18,7 +18,7 @@
         <nav class="collapse navbar-collapse navbar-right" id="navbar-collapse-1" role="navigation">
             <ul class="nav navbar-nav">
                 {{#each @site.navBar}}
-                    <li class="{{#if (startsWith @site.url url)}}active{{/if}}"><a href="{{url}}">{{title}}</a></li>
+                    <li class="{{#if (startsWith ../url url)}}active{{/if}}"><a href="{{url}}">{{title}}</a></li>
                 {{/each}}
             </ul>
         </nav>
