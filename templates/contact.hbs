@@ -15,6 +15,12 @@
                     <h3><i class="fa fa-envelope-o"></i> {{t "email"}}</h3>
                     <a class="email" href="mailto:{{email}}">{{email}}</a>
                 {{/if}}
+
+                {{#if @site.membership}}
+                    <p class='membership'>
+                      <a href="{{@site.membership}}" class="btn btn-purple btn-lg" target="_blank">{{t 'membership_form'}}</a>
+                    </p>
+                {{/if}}
             </div>
         {{/if}}
 

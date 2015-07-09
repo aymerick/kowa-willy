@@ -40,6 +40,12 @@ body.homepage {
                 font-size: 18px;
             }
         }
+
+        .membership {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
     }
 
     .activities {
@@ -52,6 +58,13 @@ body.homepage {
 
         .more {
             margin-top: 20px;
+        }
+    }
+
+    .join-us {
+        .membership {
+            margin-top: 30px;
+            text-align: center;
         }
     }
 }
