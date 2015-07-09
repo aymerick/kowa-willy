@@ -119,6 +119,9 @@ body.contact .content {
       font-size: 16px; } }
   body.contact .content .contact i.fa-building-o {
     margin-right: 10px; }
+  body.contact .content .contact .membership {
+    margin-top: 30px;
+    text-align: center; }
   @media (min-width: 768px) {
     body.contact .content .social {
       font-size: 24px; } }
@@ -330,6 +333,10 @@ body.homepage .presentation {
     @media (min-width: 768px) {
       body.homepage .presentation .intro {
         font-size: 18px; } }
+  body.homepage .presentation .membership {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center; }
 body.homepage .activities {
   padding-bottom: 10px;
   text-align: justify; }
@@ -337,3 +344,6 @@ body.homepage .activities {
     margin-bottom: 20px; }
   body.homepage .activities .more {
     margin-top: 20px; }
+body.homepage .join-us .membership {
+  margin-top: 30px;
+  text-align: center; }
