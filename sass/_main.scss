@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-    color: $base;
+    color: $base-color;
 
     &:hover {
         color: $base-alt;
@@ -30,7 +30,7 @@ ul ul {
 
 .btn-custom {
     color: $base-inverse;
-    background-color: $base;
+    background-color: $base-color;
     border-color: $base-deep;
 }
 .btn-custom:hover {
