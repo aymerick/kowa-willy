@@ -7,7 +7,7 @@ body.events {
     }
 
     .event {
-        background-color: #fff;
+        background-color: $base-background;
         box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
         margin: 20px 0px;
 
@@ -28,8 +28,8 @@ body.events {
             width: 100%;
             padding: 5px;
 
-            color: $color-inverse;
-            background-color: $color-main-soft;
+            color: $base-inverse;
+            background-color: $base-adjacent;
 
             text-align: center;
             text-transform: uppercase;
@@ -56,7 +56,7 @@ body.events {
         }
 
         &:nth-child(even) time {
-            background-color: $color-main;
+            background-color: $base;
         }
 
         img {
@@ -66,6 +66,7 @@ body.events {
         .info {
             padding: 20px;
             text-align: center;
+            color: $base-font;
 
             .title {
                 margin: 0px;
@@ -88,13 +89,12 @@ body.events {
             }
 
             .place {
-                color: $color-events-place;
             }
 
             .dates {
                 margin-top: 10px;
                 font-style: italic;
-                color: $color-events-dates;
+                color: $base-font-light;
             }
         }
 
@@ -117,7 +117,7 @@ body.events {
                 height: 120px;
                 overflow: hidden;
 
-                background-color: $color-background-alt;
+                background-color: $base-background-alt;
                 text-align: left;
             }
         }

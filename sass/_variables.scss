@@ -1,38 +1,29 @@
-// Main color
-$color-main: #92278F;
+// Base color
+$base: #92278F;
 
-// Main dark color
-$color-main-dark: #781373;
+// Alternative base color
+$base-alt: #781373;
 
-// Main deep color
-$color-main-deep: #62045E;
+// Deeper base color
+$base-deep: #62045E;
 
-// Main soft color
-$color-main-soft: #c52c66;
+// Adjacent base color
+$base-adjacent: #c52c66;
 
-// Main inverse color
-$color-inverse: #fff;
+// Inverse color
+$base-inverse: #fff;
 
 // Alternative inverse color
-$color-inverse-alt: #ddd;
+$base-inverse-alt: #ddd;
 
 // Main background color
-$color-background: #fff;
+$base-background: #fff;
 
 // Alternative background color
-$color-background-alt: #f5f5f5;
+$base-background-alt: #f5f5f5;
 
-// Navigation bar font color
-$color-navbar-font: #444;
+// Main font color
+$base-font: #333;
 
-// Place color in events list
-$color-events-place: #333;
-
-// Dates color in events list
-$color-events-dates: #7a7a7a;
-
-// Posts line separator color
-$color-posts-separator: #ebf2f6;
-
-// Post date color
-$color-post-date: #999;
+// Lighter font color
+$base-font-light: #7a7a7a;

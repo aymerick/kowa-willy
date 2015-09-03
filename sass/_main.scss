@@ -7,18 +7,19 @@ body {
     /* Margin bottom by footer height */
     margin-bottom: $footer-height;
 
-    background-color: $color-background;
+    background-color: $base-background;
+    color: $base-font;
 }
 
 h1, h2, h3, h4, h5 {
-    color: $color-main-dark;
+    color: $base-alt;
 }
 
 a {
-    color: $color-main;
+    color: $base;
 
     &:hover {
-        color: $color-main-dark;
+        color: $base-alt;
     }
 }
 
@@ -27,13 +28,13 @@ ul ul {
     margin-bottom: 10px;
 }
 
-.btn-purple {
-    color: $color-inverse;
-    background-color: $color-main;
-    border-color: $color-main-deep;
+.btn-custom {
+    color: $base-inverse;
+    background-color: $base;
+    border-color: $base-deep;
 }
-.btn-purple:hover {
-    color: $color-inverse;
-    background-color: $color-main-dark;
-    border-color: $color-main-deep;
+.btn-custom:hover {
+    color: $base-inverse;
+    background-color: $base-alt;
+    border-color: $base-deep;
 }

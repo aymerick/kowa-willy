@@ -10,14 +10,14 @@ footer {
         margin-bottom: 0;
     }
 
-    background-color: $color-main;
-    color: $color-inverse;
+    background-color: $base;
+    color: $base-inverse;
 
     a {
-        color: $color-inverse;
+        color: $base-inverse;
 
         &:hover {
-            color: $color-inverse;
+            color: $base-inverse;
         }
     }
 
@@ -25,7 +25,7 @@ footer {
         padding: 0 10px;
 
         &:nth-child(n+2) {
-            border-left: $color-inverse solid 1px;
+            border-left: $base-inverse solid 1px;
         }
     }
 }
