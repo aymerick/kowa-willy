@@ -6,17 +6,19 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: $footer-height;
+
+    background-color: $color-background;
 }
 
 h1, h2, h3, h4, h5 {
-    color: $color-purple-darkest;
+    color: $color-main-dark;
 }
 
 a {
-    color: $color-purple;
+    color: $color-main;
 
     &:hover {
-        color: $color-purple-dark;
+        color: $color-main-dark;
     }
 }
 
@@ -26,12 +28,12 @@ ul ul {
 }
 
 .btn-purple {
-    color: #fff;
-    background-color: $color-purple;
-    border-color: $color-purple-darkest;
+    color: $color-inverse;
+    background-color: $color-main;
+    border-color: $color-main-deep;
 }
 .btn-purple:hover {
-    color: #fff;
-    background-color: $color-purple-dark;
-    border-color: $color-purple-darkest;
+    color: $color-inverse;
+    background-color: $color-main-dark;
+    border-color: $color-main-deep;
 }

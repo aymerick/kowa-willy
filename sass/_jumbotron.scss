@@ -1,8 +1,8 @@
 .jumbotron {
     margin-bottom: 0px;
 
-    color: $jumbotron-color;
-    background-color: $jumbotron-background-color;
+    color: $color-inverse;
+    background-color: $color-main;
 
     h1 {
         @media (max-width: $screen-xs-max) {
@@ -11,7 +11,7 @@
     }
 
     .description {
-        color: $jumbotron-description-color;
+        color: $color-inverse-alt;
 
         @media (max-width: $screen-xs-max) {
             font-size: 16px;

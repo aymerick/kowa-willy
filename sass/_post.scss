@@ -1,9 +1,9 @@
 body.post {
     .post-header {
-        color: #999;
         margin-bottom: 10px;
 
-        .meta {
+        .date {
+            color: $color-post-date;
             font-style: italic;
         }
     }
