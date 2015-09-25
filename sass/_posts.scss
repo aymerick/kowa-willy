@@ -11,7 +11,7 @@ body.posts {
         margin-bottom: 20px;
         padding-bottom: 20px;
 
-        border-bottom: $base-background-alt 1px solid;
+        border-bottom: $color-background-alt 1px solid;
         &:last-child {
             border-bottom: none;
         }
@@ -22,16 +22,16 @@ body.posts {
             content: "";
             width: 7px;
             height: 7px;
-            border: $base-background-alt 1px solid;
+            border: $color-background-alt 1px solid;
             position: absolute;
             bottom: -4px;
             left: 50%;
             margin-left: -5px;
-            background: $base-inverse;
+            background: $color-inverse;
             -webkit-border-radius: 100%;
             -moz-border-radius: 100%;
             border-radius: 100%;
-            box-shadow: $base-inverse 0 0 0 5px;
+            box-shadow: $color-inverse 0 0 0 5px;
         }
 
         .title {
@@ -40,7 +40,7 @@ body.posts {
         }
 
         .date {
-            color: $base-font-light;
+            color: $color-font-light;
             font-style: italic;
             margin-bottom: 10px;
         }

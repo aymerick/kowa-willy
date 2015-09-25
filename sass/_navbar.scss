@@ -13,7 +13,7 @@
         }
 
         .navbar-brand {
-            color: $base-deep;
+            color: $color-deep;
 
             &.with-logo {
                 padding-top: 3px;
@@ -25,7 +25,7 @@
 .navbar-default {
     .navbar-nav>li>a {
         font-size: 16px;
-        color: $base-font;
+        color: $color-font;
 
         @media (min-width: $screen-md-min) {
             font-size: 18px;
