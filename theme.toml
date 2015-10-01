@@ -1,0 +1,31 @@
+name = "Willy"
+author = "aymerick"
+homepage = "https://github.com/aymerick/kowa-willy"
+
+[[palettes]]
+  name = "Green"
+  [palettes.vars]
+    color-main = "#056000"
+    color-alt = "#055301"
+    color-deep = "#022300"
+    color-adjacent = "#256F6C"
+    color-inverse = "#fff"
+    color-inverse-alt = "#ddd"
+    color-background = "#fff"
+    color-background-alt = "#f5f5f5"
+    color-font = "#333"
+    color-font-light = "#7a7a7a"
+
+[[palettes]]
+  name = "Purple"
+  [palettes.vars]
+    color-main = "#92278F"
+    color-alt = "#781373"
+    color-deep = "#62045E"
+    color-adjacent = "#c52c66"
+    color-inverse = "#fff"
+    color-inverse-alt = "#ddd"
+    color-background = "#fff"
+    color-background-alt = "#f5f5f5"
+    color-font = "#333"
+    color-font-light = "#7a7a7a"
